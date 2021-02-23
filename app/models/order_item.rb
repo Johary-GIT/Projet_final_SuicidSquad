@@ -4,12 +4,7 @@ class OrderItem < ApplicationRecord
 
     def unit_price
 
-        # if persisted?
-        #     self[:unit_price]
-        # else
-        #     product.price 
-        # end
-        2
+        # TODO: This should return the unit price
         
     end
 

@@ -10,15 +10,5 @@
   <%= @product.price %>
 </p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @product.content %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= Category.find_by(id: @product.category_id).name  %>
-</p>
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

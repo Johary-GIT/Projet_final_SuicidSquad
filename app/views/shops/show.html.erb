@@ -11,16 +11,5 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @product.content %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= Category.find_by(id: @product.category_id).name  %>
-</p>
-
-
+|
 <%= link_to 'Back', root_path %>

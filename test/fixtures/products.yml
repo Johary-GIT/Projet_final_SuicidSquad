@@ -3,11 +3,7 @@
 one:
   title: MyString
   price: 9.99
-  content: MyText
-  category: one
 
 two:
   title: MyString
   price: 9.99
-  content: MyText
-  category: two

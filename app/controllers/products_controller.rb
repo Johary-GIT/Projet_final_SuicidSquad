@@ -56,10 +56,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  def product_by_cate (category_id)
-    @product = Product.where(category_id: category_id)
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -68,6 +64,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:title, :price, :content, :category_id)
+      params.require(:product).permit(:title, :price)
     end
 end

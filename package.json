@@ -1,5 +1,5 @@
 {
-  "name": "projet-final",
+  "name": "online-shop",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

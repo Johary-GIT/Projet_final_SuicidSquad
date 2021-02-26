@@ -10,6 +10,13 @@ class OrderItemsController < ApplicationController
         session[:order_id] = @order.id
     end
 
+    def update
+        @order = current_order
+        @order_item = @order.order_items.find(params[:id])
+        @order_item.update(order_params)
+        redirect_to root_path
+    end
+
 
     private
     def order_params

@@ -14,8 +14,16 @@ class OrderItemsController < ApplicationController
         @order = current_order
         @order_item = @order.order_items.find(params[:id])
         @order_item.update(order_params)
-        redirect_to root_path
+        @order_items = current_order.order_items
     end
+
+    def destroy
+        @order = current_order
+        @order_item = @order.order_items.find(params[:id])
+        @order_item.destroy
+        @order_items = current_order.order_items
+    end
+
 
 
     private

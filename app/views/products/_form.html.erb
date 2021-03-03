@@ -21,6 +21,15 @@
     <%= form.text_field :price %>
   </div>
 
+  <div class="field">
+    <% if product.image.attached?  %>
+       <%= image_tag product.image, style: "width: 200px, display :block" %>
+    <% end %>
+    
+    <%= form.label :image %>
+    <%= form.file_field :image, class: "form-control" %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

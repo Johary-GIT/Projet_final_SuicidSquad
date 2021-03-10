@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :shops, only: [:index, :show] 
   resources :order_items
   resource :cards, only: [:show]
+  resources :charges
 
   
   root to: "home#index"
